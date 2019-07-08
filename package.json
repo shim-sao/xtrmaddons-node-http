@@ -1,0 +1,61 @@
+{
+  "name": "xtrmaddons-node-http",
+  "version": "0.0.1",
+  "description": "",
+  "main": "out/index.js",
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "xtrmaddons",
+    "http"
+  ],
+  "author": "shim-sao <contact@xtrmaddons.com> (http://www.xtrmaddons.com/)",
+  "license": "MIT",
+  "homepage": "https://github.com/shim-sao/xtrmaddons-node-http",
+  "bugs": {
+    "url": "https://github.com/shim-sao/xtrmaddons-node-http/issues",
+    "email": "error@xtrmaddons.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shim-sao/xtrmaddons-node-http.git"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-bearer-token": "^2.4.0",
+    "helmet": "^3.18.0",
+    "module-alias": "^2.2.0",
+    "xtrmaddons-soft-suite-conf": "github:shim-sao/xtrmaddons-soft-suite-conf#1.0.0-dev",
+    "xtrmaddons-soft-suite-logger": "github:shim-sao/xtrmaddons-soft-suite-logger"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.5",
+    "@types/express": "^4.17.0",
+    "@types/helmet": "0.0.43",
+    "@types/node": "^12.0.12",
+    "@types/typescript": "^2.0.0"
+  },
+  "_moduleAliases": {
+    "@src": "src",
+    "@out": "out"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "config/*",
+      "docs/*",
+      "data/*",
+      "logs/*",
+      "*.json",
+      "*.db3",
+      "*.db3-shm",
+      "*.db3-wal"
+    ],
+    "delay": "2500"
+  }
+}
