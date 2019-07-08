@@ -23,7 +23,7 @@ export default class Http {
    * @type {express}
    * @memberof Http
    */
-  protected xprss: any;
+  protected xprss: express.Express;
 
   /**
    * Method class constructor.
